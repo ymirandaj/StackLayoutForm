@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="StackLayoutForm.MainPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Padding="0" BackgroundColor="Maroon">
+                <BoxView Color="Gray" 
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="100"
+                         VerticalOptions="Start"></BoxView>
+                <Button CornerRadius="40"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        BackgroundColor="red"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        TranslationY    ="-30"></Button>
+                <StackLayout HeightRequest="100" 
+                             VerticalOptions="Start"
+                             HorizontalOptions="FillAndExpand"
+                             Spacing="20" BackgroundColor="Maroon">
+                    <Label Text="User name"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           TextColor="White"></Label>
+                    <Entry Placeholder="Bio + Hashtag"
+                           TextColor="white"
+                           PlaceholderColor="white"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand"></Entry>
+                </StackLayout>
+                <StackLayout BackgroundColor="White"
+                             HeightRequest="50"
+                            
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="Start">
+
+                    <StackLayout Orientation="Horizontal"
+                                 VerticalOptions="CenterAndExpand"
+                                 Padding="2,5">
+                            
+                        <BoxView BackgroundColor="Black" ></BoxView>
+                        <Label  Text="Black" VerticalOptions="Center"  TextColor="Black"></Label>
+                        <Label  Text="Black" VerticalOptions="Center" HorizontalOptions="Start"  Padding="0, 5" TextColor="Black"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>        
+    </ContentPage.Content>
+</ContentPage>
