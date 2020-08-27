@@ -15,7 +15,7 @@
                         BackgroundColor="red"
                         HorizontalOptions="Center"
                         VerticalOptions="Start"
-                        TranslationY    ="-30"></Button>
+                        TranslationY    ="-35"></Button>
                 <StackLayout HeightRequest="100" 
                              VerticalOptions="Start"
                              HorizontalOptions="FillAndExpand"
@@ -34,18 +34,81 @@
                 </StackLayout>
                 <StackLayout BackgroundColor="White"
                              HeightRequest="50"
-                            
+                             Padding="5,10"
                              HorizontalOptions="FillAndExpand"
-                             VerticalOptions="Start">
+                             VerticalOptions="Start"
+                             Orientation="Horizontal">
 
                     <StackLayout Orientation="Horizontal"
-                                 VerticalOptions="CenterAndExpand"
-                                 Padding="2,5">
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Start"
+                                 Padding="10,0"
+                                 Spacing="0">
                             
-                        <BoxView BackgroundColor="Black" ></BoxView>
-                        <Label  Text="Black" VerticalOptions="Center"  TextColor="Black"></Label>
-                        <Label  Text="Black" VerticalOptions="Center" HorizontalOptions="Start"  Padding="0, 5" TextColor="Black"></Label>
+                        <BoxView  BackgroundColor="Black" ></BoxView>
+                        <Label  Text="Accent color" VerticalOptions="Center" HorizontalOptions="Start"  Padding="5" TextColor="Black"></Label>
+                     
                     </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="EndAndExpand"
+                                 Spacing="0"
+                                 Padding="10,0">
+
+                        <BoxView BackgroundColor="Maroon" ></BoxView>
+                        <Label  Text="Primary color" VerticalOptions="Center" HorizontalOptions="Start"  Padding="5, 5" TextColor="Black"></Label>
+                       
+                    </StackLayout>
+                    
+                </StackLayout>
+
+                <StackLayout Margin="5" Orientation="Vertical">
+                    <StackLayout Spacing="0" 
+                             Orientation="Horizontal"
+                            Margin="5">
+                        <Label Text="Age:" 
+                               TextColor="White"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="100"></Label>
+                        <Entry HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start"
+                               TextColor="White"
+                               Text="40"></Entry>
+                        
+                    </StackLayout>
+                    <StackLayout Spacing="0" 
+                             Orientation="Horizontal"
+                            Margin="5">
+                        <Label Text="Interest:" 
+                               TextColor="White"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="100"></Label>
+                        <Entry HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start"
+                               TextColor="White"
+                               Text="40"></Entry>
+
+                    </StackLayout>
+                    <StackLayout Spacing="0" 
+                             Orientation="Horizontal"
+                            Margin="5">
+                        <Label Text="Ask me about:" 
+                               TextColor="White"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"
+                               WidthRequest="100"></Label>
+                        <Entry HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start"
+                               TextColor="White"
+                               Text="40"></Entry>
+
+                    </StackLayout>
+                    
+                </StackLayout>
+                <StackLayout Margin="15" VerticalOptions="EndAndExpand">
+                    <Button BackgroundColor="white" Text="Registrar datos"></Button>
                 </StackLayout>
             </StackLayout>
         </ScrollView>        
